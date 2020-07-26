@@ -13,10 +13,10 @@ do {
     "Введите ЧИСЛО или нажмине 'Cancel' для остановки работы скрипта",
   );
 
-  if (Number(input) === NaN) {
-    alert('Было введено не число, попробуйте еще раз');
-  } else {
+  if (Number(input) !== NaN) {
     total += Number(input);
+  } else {
+    alert('Было введено не число, попробуйте еще раз');
   }
 } while (input !== null);
 
